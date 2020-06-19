@@ -156,7 +156,7 @@ def iss(request):
     return render(request, 'Focuser/focuser_iss.html', context)
 ```
 
-**I was able to use a primary key generated in the database to 
+**I was able to use a primary key generated in the database to create a link to each individual entry**
 
 /templates/Focuser/focuser_index.html:
 ```
