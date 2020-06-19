@@ -27,12 +27,12 @@ During a 2 week sprint at the Tech Academy, I used Python and Django to create a
 - Git for version control, to maintain code integrity in a team with multiple developers
 - Markdown for formatting the github README
 
-###Languages used:
+### Languages used:
 - Python
 - Javascript
 - HTML and CSS
 
-##Stories
+## Stories
 - Create a new app for the project, named appropriately for what you are tracking, and get it to display a home page with basic content.
 - Create a model for the collection item you will be tracking and add the ability to create a new item.
 - Display the information from the database in an index page.
