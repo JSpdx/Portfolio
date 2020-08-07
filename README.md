@@ -35,6 +35,23 @@ During my time as an intern at Prosper IT Consulting, I did full stack work on a
 
    This feature allows an admin to create and edit multiple calendar events based off of a start date, end date, show start time, day(s) of the week that shows will occur, and interval of weeks between shows. When the user is satisfied with their list, they can then submit it to the database. It uses moment.js to handle dates and times, and uses jQuery's AJAX method to pass data to and from the controller.
 
+
+   Here is the Action Result in the controller that passes information about the dates and show times to the browser:
+   It gets the information from the database using LINQ, then converts it to JSON and passes it to the browser, which has made an AJAX call.
+   ```
+   [Authorize(Roles = "Admin")]
+        public ActionResult GetProduction(int productionId = 0)
+        {
+            int id = Convert.ToInt32(productionId);
+            var query = from production in db.Productions
+                        where production.ProductionId == id
+                        select new { production.OpeningDay, production.ClosingDay, production.ShowtimeMat, production.ShowtimeEve, production.Runtime }; /*ShowtimeMat = production.ShowtimeMat.Value.ToString("hh:mm tt"), ShowtimeEve = production.ShowtimeEve.Value.ToString*/
+
+            return Json(JsonConvert.SerializeObject(query), JsonRequestBehavior.AllowGet);
+
+        }
+   
+   ```
    
    The bulk of it was written in Javascript:
 ```
