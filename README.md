@@ -7,7 +7,7 @@ I invite you to look at some of the work I've done.
 ### Technologies used 
 
 - C# / ASP.NET MVC
-- Javascript / jQuery
+- Javascript / jQuery / JSON
 - CSHTML / CSS / Bootstrap / Razor
 - AJAX / Moment.js / Entity Framework / MSSQL / Visual Studio / Azure DevOps
 
