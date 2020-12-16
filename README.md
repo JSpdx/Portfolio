@@ -1,7 +1,6 @@
 # Portfolio
 
 I invite you to look at some of the work I've done.
-(./AstronomyApp.md)
 
 ## Stumptown stages
 
