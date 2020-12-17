@@ -2,7 +2,7 @@
 
 I invite you to look at some of the work I've done.
 
-## Stumptown stages
+## Theatre Vertigo CMS
 
 ### Technologies used 
 
@@ -13,7 +13,7 @@ I invite you to look at some of the work I've done.
 
 ### Overview  
 
-During my time as an intern at Prosper IT Consulting, I did full stack work on a content management system for a theater production company called Stumptown Stages.
+During my time as an intern at Prosper IT Consulting, I did full stack work on a content management system for a theater production company.
 
 ### Features added
 
