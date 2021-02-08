@@ -51,7 +51,7 @@ During my time as an intern at Prosper IT Consulting, I did full stack work on a
    ```
    
    The bulk of it was written in Javascript:
-```
+```ruby
 
 // This class represents a single calendar event.
 // CalendarEvent properties that are capitalized match the properties in the MVC CalendarEvent model. 
