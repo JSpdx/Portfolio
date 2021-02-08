@@ -24,9 +24,9 @@ During my time as an intern at Prosper IT Consulting, I did full stack work on a
 - Updated Season Manager with role restrictions, altered functionality based on user role
 - Updated footer to be responsive, and fixed a bug where the Footer was not always pinned to the bottom
 
-### Highlights
+## Highlights
 
-#### Bulk Events Creation.
+### Bulk Events Creation.
 
 ![](https://media.giphy.com/media/fV7aTJFEFXEszn3Iu7/giphy.gif)
 
