@@ -35,7 +35,7 @@ During my time as an intern at Prosper IT Consulting, I did full stack work on a
 
    Here is the Action Result in the controller that passes information about the dates and show times to the browser:
    It gets the information from the database using LINQ, then converts it to JSON and passes it to the browser, which has made an AJAX call.
-   ```
+   ```csharp
    [Authorize(Roles = "Admin")]
         public ActionResult GetProduction(int productionId = 0)
         {
