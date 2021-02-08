@@ -1,6 +1,3 @@
-# Portfolio
-
-I invite you to look at some of the work I've done.
 
 ## Theatre Vertigo CMS
 
@@ -17,15 +14,15 @@ During my time as an intern at Prosper IT Consulting, I did full stack work on a
 
 ### Features added
 
-- Build widget that allows an admin to add multiple calendar events, based off of a number of parameters.
-- Create infinite scrolling feature for photo index page (page loads more photos when user reaches the bottom)
-- Create animated modal image for photo page  
-- Enhance flexibility of search feature  
-- Restrict access of rental request form to Admins
-- Make pictures of cast members dynamically resize / make text layover clickable  
-- Modify season managers to track season  
-- Update Season Manager with role restrictions, alter functionality based on user role
-- Update footer to be responsive / Bug Fix: Footer not always pinned to bottom
+- Built widget that allows an admin to add multiple calendar events, based off of a number of parameters.
+- Created an infinite scrolling feature for photo index page (page loads more photos when user reaches the bottom)
+- Created an animated modal image for photo page  
+- Enhanced flexibility of search feature  
+- Restricted access of rental request form to Admins
+- Made pictures of cast members dynamically resize / made text layover clickable  
+- Modified season managers to track season  
+- Updated Season Manager with role restrictions, altered functionality based on user role
+- Updated footer to be responsive, and fixed a bug where the Footer was not always pinned to the bottom
 
 ### Highlights
 
