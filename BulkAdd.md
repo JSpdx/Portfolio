@@ -61,7 +61,7 @@ class CalendarEvent {
         this.Title = $("#generate__production-field").children("option").filter(":selected").text();
         this.ProductionId = $("#generate__production-field").val();
         this.StartDate = startDate;
-        this.EndDate = endDate;     // events are never longer than one day, but to match the database, EndDate is the same date as StartDate with it's time advanced by the runtime of the production.
+        this.EndDate = endDate;     // events are never longer than one day, but to match the database, EndDate is the same date as StartDate with its time advanced by the runtime of the production.
         this.dayOfWeek = dayOfWeek;
         this.startTime = startTime;
     }
