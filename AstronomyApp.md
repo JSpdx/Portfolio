@@ -1,6 +1,6 @@
 # FOCUSER
 A web app for displaying astronomy information I built using Django, API's from NASA and Wolfram Alpha, and the webscraping package BeautifulSoup
-
+https://focuser.herokuapp.com/
 
 ## Introduction
 During a 2 week sprint at the Tech Academy, I used Python and Django to create a web app that displays information for the amateur astronomer, and space nerd.
@@ -16,6 +16,7 @@ During a 2 week sprint at the Tech Academy, I used Python and Django to create a
 
 ## Technologies/Practices
 - Django MTV/MVC framework 
+- Deployed with Heroku PaaS
 - Used APIs from NASA and Wolfram Alpha to add dynamic, self-updating features to the application
 - Parsed JSON to retrieve the desired information from the API
 - Webscraping package BeautifulSoup, used to get data from an RSS
