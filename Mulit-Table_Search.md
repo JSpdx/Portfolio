@@ -28,7 +28,7 @@ Front-end:
 
 ### Bulk Events Creation.
 
-![zxc](https://photos.app.goo.gl/NU5PkDarvjghhWT5A)
+![zxc](https://drive.google.com/file/d/1HpjmMIMc9MLLErdFUWUmNlPidYCI0K6F/view?usp=sharing)
 
    This feature allows an admin to create and edit multiple calendar events based off of a start date, end date, show start time, day(s) of the week that shows will occur, and interval of weeks between shows. When the user is satisfied with their list, they can then submit it to the database. It uses moment.js to handle dates and times, and uses jQuery's AJAX method to pass data to and from the controller.
 
