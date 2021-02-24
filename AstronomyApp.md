@@ -1,6 +1,6 @@
 # FOCUSER
 A web app for displaying astronomy information I built using Django, API's from NASA and Wolfram Alpha, and the webscraping package BeautifulSoup
-
+https://focuser.herokuapp.com/
 
 ## Introduction
 During a 2 week sprint at the Tech Academy, I used Python and Django to create a web app that displays information for the amateur astronomer, and space nerd.
@@ -16,6 +16,7 @@ During a 2 week sprint at the Tech Academy, I used Python and Django to create a
 
 ## Technologies/Practices
 - Django MTV/MVC framework 
+- Deployed with Heroku PaaS
 - Used APIs from NASA and Wolfram Alpha to add dynamic, self-updating features to the application
 - Parsed JSON to retrieve the desired information from the API
 - Webscraping package BeautifulSoup, used to get data from an RSS
@@ -32,7 +33,7 @@ During a 2 week sprint at the Tech Academy, I used Python and Django to create a
 - Javascript
 - HTML and CSS
 
-## Stories
+## Features
 - Create a new app for the project, named appropriately for what you are tracking, and get it to display a home page with basic content.
 - Create a model for the collection item you will be tracking and add the ability to create a new item.
 - Display the information from the database in an index page.
@@ -56,7 +57,7 @@ During a 2 week sprint at the Tech Academy, I used Python and Django to create a
 **Using Django's built in FOR loop tags, I was able to quickly and efficiently create an HTML table that would automatically display all of the eclipse events stored in the database, and reflect an added or subtracted item.**
 
 /templates/Focuser/focuser_index.html
-```
+```html
 	 <table class="table-striped">
             
 	    <tr id="column_header">
@@ -83,7 +84,7 @@ During a 2 week sprint at the Tech Academy, I used Python and Django to create a
 **Using Django tags and hidden HTML forms, I was able to pass the API data being displayed on that page to be saved in the DB.**
 
 /templates/Focuser/focuser_apod.html:
-```
+```html
 
 	<form method ="post">
             {% csrf_token %}
@@ -96,7 +97,7 @@ During a 2 week sprint at the Tech Academy, I used Python and Django to create a
 ```
 
 /Focuser/views.py:
-```
+```python
  def apod(request):
 
     response = requests.get('https://api.nasa.gov/planetary/apod?api_key=4a8sB9S0WoqXO6HstMj15Lgqu5isYYpys0675ygO')
@@ -122,7 +123,7 @@ During a 2 week sprint at the Tech Academy, I used Python and Django to create a
 By changing the HTML request method to POST, I was able to create branching IF statements, adding logic to my application 
  I used a counter to navigate backwards and forwards through the desired HTML tags to view older or newer entries.**
 
-```
+```python
 iss_counter = 1                                                        #used this global variable as a counter to increment and decrement the index containing page entries.
 def iss(request):
     global iss_counter 
@@ -159,7 +160,7 @@ def iss(request):
 **I was able to use a primary key generated in the database to create a link to each individual entry**
 
 /templates/Focuser/focuser_index.html:
-```
+```html
 {% for eclipse in eclipses %}     <!-- creates a new row for each eclipse event stored-->
                 <tr>
                     <td class="col-md">{{eclipse.date}}</td>
@@ -180,7 +181,7 @@ In the url routing page, the primary key `<int:pk>` is used to create the url pa
 path('<int:pk>/Details', views.details, name='details'),
 ```
 Once passed as an argument into the `details` view, the primary key is then used to retrieve the pertaining item from the database and send it to be displayed.
-```
+```python
 def details(request, pk):
     pk = int(pk)
     item = get_object_or_404(Eclipse, pk=pk)
