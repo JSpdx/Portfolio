@@ -49,6 +49,7 @@ I fixed this by putting a check before setting the ViewData in the controller:
 ```if (resultsCast.Count > 0) ViewData["ResultsCast"] = resultsCast;```
 
 I created one method for retrieving the data, and a second set of overloaded methods to highlight the search key. If I were going to do this over again, I'd use generics and reduce the highlight feature to a single method.
+There is also a lot of code duplication in the ArchiveSerch method, but at this point I think it's a necessary evil because each table is queried differently.
                    
 ```csharp
     private void ArchiveSearch(ApplicationDbContext db, string searchByCategory, string searchKey)
