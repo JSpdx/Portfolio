@@ -50,7 +50,7 @@ During my time as an intern at Prosper IT Consulting, I did full stack work on a
    
    ```
    
-   The bulk of it was written in Javascript:
+   The bulk of it was written using vanilla Javascript and AJAX.  Hope you enjoy spaghetti.  I wrote this a few years ago, and it gives me allergies reading it.:
 ```javascript
 
 // This class represents a single calendar event.
