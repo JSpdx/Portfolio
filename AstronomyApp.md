@@ -35,7 +35,7 @@ During a 2 week sprint at the Tech Academy, I used Python and Django to create a
 
 ## Highlights
 
-**Using Django's built in FOR loop tags, I was able to quickly and efficiently create an HTML table that would automatically display all of the eclipse events stored in the database, and reflect an added or subtracted item.**
+**Using Django's built in FOR loop tags, I was able to quickly and efficiently create an HTML table that would dynamically display all of the eclipse events stored in the database, and reflect an added or subtracted item.**
 
 /templates/Focuser/focuser_index.html
 ```html
